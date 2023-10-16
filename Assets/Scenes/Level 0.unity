@@ -1302,18 +1302,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3756327579220264899, guid: 86c980eb55f940745bf6b1e2bf98296d, type: 3}
   m_PrefabInstance: {fileID: 3756327580115525367}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1269078330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269078324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1269078331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,6 +1315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 5.9
+  jumpSpeed: 5
 --- !u!1 &1964777087
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,6 +3071,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5518345050727370325, guid: 86c980eb55f940745bf6b1e2bf98296d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3756327579220264896, guid: 86c980eb55f940745bf6b1e2bf98296d, type: 3}
       propertyPath: m_RootOrder
       value: 1

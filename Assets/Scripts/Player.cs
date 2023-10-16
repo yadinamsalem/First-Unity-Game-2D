@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
     [SerializeField] float runSpeed = 10f;
+    [SerializeField] float jumpSpeed = 10f;
 
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
@@ -21,6 +23,18 @@ public class Player : MonoBehaviour
     void Update()
     {
         Run();
+        Jump();
+    }
+
+    private void Jump()
+    {
+        bool isJumping = CrossPlatformInputManager.GetButtonDown("Jump");
+
+        if (isJumping)
+        {
+            Vector2 jumpVelocity = new Vector2(playerRigidBody.velocity.x, jumpSpeed);
+            playerRigidBody.velocity = jumpVelocity;
+        }
     }
 
     private void Run()
