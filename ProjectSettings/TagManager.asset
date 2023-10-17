@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GreenGem
+  - GemNumber
   layers:
   - Default
   - TransparentFX
@@ -43,6 +45,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 3744009093
+    locked: 0
+  - name: Items
+    uniqueID: 4192966395
     locked: 0
   - name: Player
     uniqueID: 1220773619
