@@ -1,33 +1,30 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class GreenGem : MonoBehaviour
 {
-
     public Text GemCounter;
     public static int numberOfGems = 0;
+    public Vector2 offset = new Vector2(0, 0); // The offset to move the Text.
+    public NextLevelPop popUpMessage; // Reference to the Next Level PopUpMessage script.
+    public event Action<Collision2D> GemCollectCollisionEvent;
 
     void Start()
     {
-        GemCounter.text = "Gems : " + numberOfGems;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("here");
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Handle the collision with the player here.
-            Debug.Log("Collided with the player!");
+            GemCollectCollisionEvent?.Invoke(collision);
             Destroy(gameObject);
-            GemCounter.text = "Gems : " + ++numberOfGems;
         }
+
     }
 
-    public void UpdateText(string newText)
-    {
-        GemCounter.text = newText;
-    }
 }
