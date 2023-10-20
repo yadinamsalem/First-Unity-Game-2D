@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     {
         Run();
         Jump();
+        Attack();
     }
 
     private void Jump()
@@ -46,6 +47,13 @@ public class Player : MonoBehaviour
 
         FlipSprite();
         ChangeToRunningAnimation();
+
+    }
+
+    private void Attack()
+    {
+        bool isAttacking = CrossPlatformInputManager.GetButtonDown("Attack");
+        playerAnimator.SetBool("Attack", isAttacking);
 
     }
 
