@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -17,6 +15,7 @@ public class Player : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -25,6 +24,13 @@ public class Player : MonoBehaviour
         Run();
         Jump();
         Attack();
+    }
+
+    private void DoorHasOpened()
+    {
+        // After
+        playerAnimator.SetBool("Going Out The Door", true);
+
     }
 
     private void Jump()
