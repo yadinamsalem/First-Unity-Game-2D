@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e698555420a99e449f5050a1fcfe3fe
+guid: 969e258ad3748b442aef5cff9e6e77ca
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,12 +105,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Door In (78x58)_0
+      name: Opening (46x56)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2
-        width: 58
+        y: 0
+        width: 46
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -119,19 +119,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56cf662bdd6f6dd4b8741145f48c7f82
-      internalID: -215643692
+      spriteID: 4d974c730a2e3984c8a945f4b95e651b
+      internalID: -1732593117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door In (78x58)_1
+      name: Opening (46x56)_1
       rect:
         serializedVersion: 2
-        x: 78
-        y: 2
-        width: 58
+        x: 46
+        y: 0
+        width: 46
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -140,19 +140,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c97d29962adcb2b4a9e9e80b4a8642b3
-      internalID: -1363337512
+      spriteID: a1140523dcd8e8840bef2d93224a0123
+      internalID: 582468197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door In (78x58)_2
+      name: Opening (46x56)_2
       rect:
         serializedVersion: 2
-        x: 156
-        y: 2
-        width: 58
+        x: 92
+        y: 0
+        width: 46
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,19 +161,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8be8e207fe69fe46b74d1ad1f5176cd
-      internalID: -1672484543
+      spriteID: 6b2db0efe90483c4181127d8f52b8315
+      internalID: 1849860338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door In (78x58)_3
+      name: Opening (46x56)_3
       rect:
         serializedVersion: 2
-        x: 234
-        y: 2
-        width: 58
+        x: 138
+        y: 0
+        width: 46
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -182,19 +182,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eda8899d92cb7a740b05f341cd60416d
-      internalID: 36594475
+      spriteID: 5b4a7358bfa8079499ca7ecd375c4eb1
+      internalID: -248681364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door In (78x58)_4
+      name: Opening (46x56)_4
       rect:
         serializedVersion: 2
-        x: 312
-        y: 2
-        width: 58
+        x: 184
+        y: 0
+        width: 46
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -203,71 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74c9a0f35479458469341e555ec51388
-      internalID: 1849343477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door In (78x58)_5
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 2
-        width: 58
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d997921a71e9834a88d6ce4594282a7
-      internalID: 231428777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door In (78x58)_6
-      rect:
-        serializedVersion: 2
-        x: 468
-        y: 2
-        width: 58
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a97a604a00ed6644ba0b7b5172698e0f
-      internalID: -593021014
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Door In (78x58)_7
-      rect:
-        serializedVersion: 2
-        x: 546
-        y: 2
-        width: 58
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b47b43333ce9624ca7f6199b2047981
-      internalID: 332935152
+      spriteID: 33f9ee8890490604291e3f48a70ce806
+      internalID: -261044098
       vertices: []
       indices: 
       edges: []
@@ -283,14 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Door In (78x58)_3: 36594475
-      Door In (78x58)_0: -215643692
-      Door In (78x58)_6: -593021014
-      Door In (78x58)_5: 231428777
-      Door In (78x58)_7: 332935152
-      Door In (78x58)_4: 1849343477
-      Door In (78x58)_1: -1363337512
-      Door In (78x58)_2: -1672484543
+      Opening (46x56)_4: -261044098
+      Opening (46x56)_0: -1732593117
+      Opening (46x56)_2: 1849860338
+      Opening (46x56)_1: 582468197
+      Opening (46x56)_3: -248681364
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

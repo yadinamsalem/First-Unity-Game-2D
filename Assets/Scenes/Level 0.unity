@@ -661,6 +661,7 @@ MonoBehaviour:
   - {fileID: 1494307774}
   - {fileID: 1601771559}
   - {fileID: 1776922638}
+  displayTime: 2
 --- !u!114 &1494307774 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3928508884973182331, guid: 6cbba5472f061a948a421bac8e78949e, type: 3}
@@ -787,7 +788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a31593dbaea4d1c449cb5b6d4c0f788c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayTime: 2
   popUpText: {fileID: 2012393847}
 --- !u!1001 &3928508884707614664
 PrefabInstance:
