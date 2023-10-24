@@ -108,12 +108,12 @@ TextureImporter:
       name: Bomb On (52x56)_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 7
         y: 7
-        width: 48
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 38
+        height: 36
+      alignment: 9
+      pivot: {x: 0.48485842, y: 0.4495281}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: Bomb On (52x56)_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 59
         y: 7
-        width: 48
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 38
+        height: 36
+      alignment: 9
+      pivot: {x: 0.53028345, y: 0.4360688}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: Bomb On (52x56)_2
       rect:
         serializedVersion: 2
-        x: 104
+        x: 111
         y: 7
-        width: 48
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 38
+        height: 36
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.41924492}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: Bomb On (52x56)_3
       rect:
         serializedVersion: 2
-        x: 152
+        x: 163
         y: 7
-        width: 48
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 38
+        height: 36
+      alignment: 9
+      pivot: {x: 0.50504744, y: 0.4413964}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
