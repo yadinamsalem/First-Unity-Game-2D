@@ -230,6 +230,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1189338895}
     - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: offsetX
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 558138811}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera2
+      value: 
+      objectReference: {fileID: 558138811}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
       propertyPath: heartOffsetX
       value: 0
       objectReference: {fileID: 0}
@@ -318,7 +330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558138809}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.01, y: 0.08, z: -10}
+  m_LocalPosition: {x: -0.22, y: 0.06, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -400,6 +412,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1189338895}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: offsetX
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 558138811}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera2
+      value: 
+      objectReference: {fileID: 558138811}
     - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
       propertyPath: heartOffsetX
       value: 0.6
@@ -4611,7 +4635,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004856415}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95, y: -3.17, z: -0.0372143}
+  m_LocalPosition: {x: 0.86, y: -3.76, z: -0.0372143}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4780,6 +4804,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1189338895}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: offsetX
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 558138811}
+    - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
+      propertyPath: mainCamera2
+      value: 
+      objectReference: {fileID: 558138811}
     - target: {fileID: 3320671786405595756, guid: 42b6ae22a67129c4e9d2ae2c49f6f1bb, type: 3}
       propertyPath: heartOffsetX
       value: -0.6

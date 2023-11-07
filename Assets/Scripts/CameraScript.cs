@@ -31,9 +31,9 @@ public class CameraScript : MonoBehaviour
 
     private void SetCameraBoundaries()
     {
-        minBoundary.x = -0.96f;
+        minBoundary.x = -0.246f;
         minBoundary.y = 0;
-        maxBoundary.x = 17.5f;
+        maxBoundary.x = 8.026f;
         maxBoundary.y = 0;
     }
 
