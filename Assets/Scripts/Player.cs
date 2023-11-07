@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
@@ -9,6 +10,8 @@ public class Player : MonoBehaviour
 
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
+    public GameObject[] hearts; // An array to store the heart objects.
+    protected static int currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +19,8 @@ public class Player : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
 
+
+        currentHealth = hearts.Length;
     }
 
     // Update is called once per frame
@@ -37,7 +42,7 @@ public class Player : MonoBehaviour
     {
         bool isJumping = CrossPlatformInputManager.GetButtonDown("Jump");
 
-        if (isJumping)
+        if (isJumping && playerRigidBody.velocity.y == 0) // Jump only if key pressed AND not jump already
         {
             Vector2 jumpVelocity = new Vector2(playerRigidBody.velocity.x, jumpSpeed);
             playerRigidBody.velocity = jumpVelocity;
@@ -79,5 +84,28 @@ public class Player : MonoBehaviour
         playerAnimator.SetBool("Running", runningHorizontaly);
     }
 
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Bomb"))
+        {
+            if (currentHealth > 0)
+            {
+                Console.WriteLine("currentHealth = " + currentHealth);
+                currentHealth--;
+                Destroy(hearts[currentHealth]); // Remove one heart object.
+            }
+        }
+    }
 
+    private void RestartScene()
+    {
+        // Reload the current scene.
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
+
+    public int GetCurrentHearts()
+    {
+        return currentHealth;
+    }
 }
