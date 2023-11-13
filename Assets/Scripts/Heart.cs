@@ -12,14 +12,17 @@ public class Heart : MonoBehaviour
     {
         if (mainCamera != null)
         {
-
-            // Calculate the X position of the left border of the camera's view
-            float cameraWidth = 2.0f * mainCamera.orthographicSize * mainCamera.aspect;
-            float leftBorderX = mainCamera.transform.position.x - cameraWidth / 2.0f;
-
-            // Set the heart's new position
-            transform.position = new Vector3(leftBorderX + offsetX, transform.position.y, transform.position.z);
-
+            HeartsPosition();
         }
+    }
+
+    private void HeartsPosition()
+    {
+        // Calculate the X position of the left border of the camera's view
+        float cameraWidth = 2.0f * mainCamera.orthographicSize * mainCamera.aspect;
+        float leftBorderX = mainCamera.transform.position.x - cameraWidth / 2.0f;
+
+        // Set the heart's new position
+        transform.position = new Vector3(leftBorderX + offsetX, transform.position.y, transform.position.z);
     }
 }

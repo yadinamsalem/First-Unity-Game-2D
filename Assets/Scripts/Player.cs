@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
+using System.Linq;
 
 public class Player : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Player : MonoBehaviour
     Animator playerAnimator;
     public GameObject[] hearts; // An array to store the heart objects.
     protected static int currentHealth;
-
+    private int heartsInitialAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
 
 
-        currentHealth = hearts.Length;
+        heartsInitialAmount = currentHealth = hearts.Length;
     }
 
     // Update is called once per frame
@@ -92,7 +93,7 @@ public class Player : MonoBehaviour
             {
                 Console.WriteLine("currentHealth = " + currentHealth);
                 currentHealth--;
-                Destroy(hearts[currentHealth]); // Remove one heart object.
+                Destroy(hearts[currentHealth]); // Remove one heart object. (from the end of hearts array)
             }
         }
     }
