@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 10f;
+    float hitDelayTime = 0.35f;
 
     Rigidbody2D playerRigidBody;
     Animator playerAnimator;
@@ -91,18 +92,19 @@ public class Player : MonoBehaviour
         {
             if (currentHealth > 0)
             {
-                Console.WriteLine("currentHealth = " + currentHealth);
                 currentHealth--;
                 Destroy(hearts[currentHealth]); // Remove one heart object. (from the end of hearts array)
+                playerAnimator.SetBool("Hitted", true);
+                Debug.Log("Hitted = true");
+                Invoke("GetHit", hitDelayTime);
             }
         }
     }
 
-    private void RestartScene()
+    private void GetHit()
     {
-        // Reload the current scene.
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
+        bool isHitted = false;
+        playerAnimator.SetBool("Hitted", isHitted);
     }
 
     public int GetCurrentHearts()

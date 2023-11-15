@@ -1,21 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Heart : MonoBehaviour
+public class GemLogo : MonoBehaviour
 {
+
     public Camera mainCamera; // Reference to the player's transform
     public float offsetX; // Offset to adjust the X position of each Heart on Scene screen.
 
-    private void Update()
+    void Start()
     {
-        if (mainCamera != null)
-        {
-            HeartsPosition();
-        }
     }
 
-    private void HeartsPosition()
+
+    void Update()
+    {
+        GemsLogoPosition();
+    }
+
+    private void GemsLogoPosition()
     {
         // Calculate the X position of the left border of the camera's view
         float cameraWidth = 2.0f * mainCamera.orthographicSize * mainCamera.aspect;
