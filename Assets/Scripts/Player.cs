@@ -43,8 +43,7 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         bool isJumping = CrossPlatformInputManager.GetButtonDown("Jump");
-
-        if (isJumping && playerRigidBody.velocity.y == 0) // Jump only if key pressed AND not jump already
+        if (isJumping && (playerRigidBody.velocity.y > -0.05 && playerRigidBody.velocity.y < 0.05)) // Jump only if key pressed AND not jump already
         {
             Vector2 jumpVelocity = new Vector2(playerRigidBody.velocity.x, jumpSpeed);
             playerRigidBody.velocity = jumpVelocity;
@@ -95,7 +94,6 @@ public class Player : MonoBehaviour
                 currentHealth--;
                 Destroy(hearts[currentHealth]); // Remove one heart object. (from the end of hearts array)
                 playerAnimator.SetBool("Hitted", true);
-                Debug.Log("Hitted = true");
                 Invoke("GetHit", hitDelayTime);
             }
         }

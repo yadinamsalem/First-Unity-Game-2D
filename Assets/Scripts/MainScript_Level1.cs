@@ -17,7 +17,7 @@ public class MainScript_Level1 : MonoBehaviour
     private int GEMS;
     public GreenGem[] gemCollisionNotifier;
     public Text GemCounter;
-    private int numberOfGems = 0;
+    private int numberOfGemsCollected = 0;
 
 
 
@@ -32,7 +32,7 @@ public class MainScript_Level1 : MonoBehaviour
         playerSprite.enabled = false;
         GemCounter.fontSize = 43;
         InitGemsOnScene();
-        
+
     }
 
     // Update is called once per frame
@@ -56,8 +56,7 @@ public class MainScript_Level1 : MonoBehaviour
 
     private void OnGemCollected(Collision2D collision)
     {
-        GemCounter.text = "X " + ++numberOfGems;
-        Debug.Log("Num : " + numberOfGems);
+        GemCounter.text = "X " + ++numberOfGemsCollected;
     }
 
     private void CheckPlayerStatus()
@@ -65,6 +64,12 @@ public class MainScript_Level1 : MonoBehaviour
         if (player.GetCurrentHearts() == 0)
         {
             popUpMessage.ShowMessage("YOU LOST !");
+            Invoke("RestartScene", displayTime);
+        }
+
+        else if (numberOfGemsCollected == GEMS)
+        {
+            popUpMessage.ShowMessage("NEXT LEVEL !");
             Invoke("RestartScene", displayTime);
         }
     }

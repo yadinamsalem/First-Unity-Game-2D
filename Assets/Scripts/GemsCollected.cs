@@ -26,7 +26,7 @@ public class GemsCollected : MonoBehaviour
         float leftBorderX = mainCamera.transform.position.x - cameraWidth / 2.0f;
 
         // Set the heart's & Gems logo new position
-        transform.position = new Vector3(leftBorderX + offsetX, transform.position.y, transform.position.z);
+        transform.position = new Vector3(leftBorderX + offsetX, 2.95f, transform.position.z);
     }
 
     private void InitGemsCollectedCounterText()
