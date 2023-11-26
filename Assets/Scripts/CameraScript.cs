@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraScript : MonoBehaviour
 {
@@ -31,10 +32,24 @@ public class CameraScript : MonoBehaviour
 
     private void SetCameraBoundaries()
     {
-        minBoundary.x = -0.246f;
-        minBoundary.y = 0;
-        maxBoundary.x = 8.026f;
-        maxBoundary.y = 0;
+        switch (SceneManager.GetActiveScene().name) // Change boundries according level name specifications.
+        {
+            case "Level 1":
+                //                                   (xMin   , xMax  ),           (yMin   , yMax  ) 
+                SetCameraBoundariesValues(new Vector2(-0.246f, 8.026f), new Vector2(0, 0));
+                break;
+            case "Level 2":
+                SetCameraBoundariesValues(new Vector2(-0.246f, 8.026f), new Vector2(0, 12));
+                break;
+        }
+    }
+
+    private void SetCameraBoundariesValues(Vector2 xVect, Vector2 yVect)
+    {
+        minBoundary.x = xVect.x;
+        minBoundary.y = yVect.x;
+        maxBoundary.x = xVect.y;
+        maxBoundary.y = yVect.y;
     }
 
 

@@ -1,12 +1,12 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MainScript_Level1 : MonoBehaviour
+public class MainScriptLevel2 : MonoBehaviour
 {
+
     public Animator doorAnimator;
     public Animator playerAnimator;
     public SpriteRenderer playerSprite;
@@ -18,10 +18,6 @@ public class MainScript_Level1 : MonoBehaviour
     public GreenGem[] gemCollisionNotifier;
     public Text GemCounter;
     private int numberOfGemsCollected = 0;
-
-
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -108,4 +104,3 @@ public class MainScript_Level1 : MonoBehaviour
             SceneManager.LoadScene(currentScene.buildIndex + 1);
     }
 }
-
